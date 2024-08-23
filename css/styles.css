@@ -1,0 +1,693 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* 
+*{
+    box-sizing: border-box;
+    outline: 3px solid limegreen !important;
+} */
+
+body{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+body {
+    scrollbar-width: none;
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    color:aliceblue;
+    z-index: 10;
+    position: relative;
+}
+
+
+/*Header Start*/
+.wrapper__header{
+    width: 100%;
+    height: 50px;
+}
+
+.wrapper__header__nav{
+    position: relative;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.wrapper__header__nav__item__link{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.wrapper__header__nav__item__link:hover,
+.wrapper__header__nav__item__link:focus-visible,
+.wrapper__header__nav__item__link:active{
+    text-decoration: underline;
+}
+
+.wrapper__header__nav__item__link img{
+    height: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+/*Header End*/
+
+
+/*Intro Start*/
+.wrapper__intro__bg{
+    margin-top: -50px;
+    position: relative;
+}
+
+.wrapper__intro__bg__text{
+    display: inline-flex;
+    font-size: 80px;
+    position: absolute;
+    color:aliceblue;
+    top: 200px;
+    left: 275px;
+}
+
+.wrapper__intro__bg__text span{
+    width: 0%;
+    word-break: break-all;
+    overflow: hidden;
+    height: 1.1em;
+    animation: move 3s infinite linear alternate,
+    move1 0.5s infinite alternate;
+}
+
+.wrapper__intro__bg__text span::before{
+    content: "";
+    display: inline-block;
+}
+
+@keyframes move {
+    90%, 100% {
+        width: 100%;
+    }
+}
+
+@keyframes move1 {
+    0% {
+        box-shadow: 3px 0 0 0 rgba(25, 30, 33);
+    }
+
+    100%{
+        box-shadow: 3px 0 0 0 aliceblue;
+    }
+}
+
+
+.wrapper__intro__bg__pic{
+    height: 100vh;
+}
+
+.wrapper__intro__bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 30, 33, 0.9);
+}
+
+.wrapper__intro__bg__disclaimer{
+    width: 70%;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper__intro__bg__disclaimer img{
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.wrapper__intro__bg__disclaimer p {
+    font-size: 20px;
+    text-align: justify;
+    color:aliceblue;
+}
+
+.wrapper__intro__bg__copyrwite a{
+    color: aliceblue;
+    text-align: justify;
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    text-decoration: underline;
+;
+}
+/*Intro End*/
+
+
+/*Dota Info Start*/
+.wrapper__dota__info{
+    height: 100vh;
+    background: url('../img/Pudge.png') no-repeat center center;
+    position: relative;
+}
+
+.wrapper__dota__info::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 30, 33, 0.9);
+}
+
+.wrapper__dota__info__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    color:aliceblue;
+    font-size: 36px;
+    line-height: 1.2em;
+    text-align: justify;
+    
+}
+/*Dota Info End*/
+
+
+/* Wallpapers Start */
+.wrapper__wallpapers__container{
+    background-color: rgba(25, 30, 33, 0.98);
+    height: auto;
+}
+
+.wrapper__wallpapers__container__gallery{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;;
+}
+
+.wrapper__wallpapers__container__gallery__pic{
+    height: 350px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(1){
+    width: 450px;
+}
+
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(2){
+    width: 450px;
+}
+
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(3){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(4){
+    width: 650px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(5){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(6){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(7){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(8){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(9){
+    width: 800px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(10){
+    width: 500px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(11){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(12){
+    width: 450px;
+}
+
+.wrapper__wallpapers__container__gallery__pic:nth-child(13){
+    width: 450px;
+}
+/*Wallpapers  End*/
+
+
+/* Pro Gamers Start */
+.wrapper__gamers__container{
+    height: 100vh;
+    background: url('../img/Dota bg main2.png') no-repeat center center;
+    position: relative;
+}
+
+.wrapper__gamers__container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 30, 33, 0.8);
+}
+
+.wrapper__gamers__container__slider{
+    display: flex;
+    position: absolute;
+    top: 250px;
+    left: 65px;
+    gap: 5px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.wrapper__gamers__container__slider__item__pic{
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item{
+    transition: .5s;
+    filter: brightness(0);
+}
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item:hover{
+    filter: brightness(1);
+    transform: translateZ(150px);
+}
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item:hover + * {
+    filter: brightness(0.3);
+    transform: translateZ(90px) rotateY(40deg);
+}
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item:hover + * + *{
+    filter: brightness(0.1);
+    transform: translateZ(20px) rotateY(10deg);
+}
+
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item:has(+ *:hover) {
+    filter: brightness(0.3);
+    transform: translateZ(90px) rotateY(-40deg);
+}
+
+.wrapper__gamers__container__slider .wrapper__gamers__container__slider__item:has(+ * + *:hover) {
+    filter: brightness(0.1);
+    transform: translateZ(20px) rotateY(-10deg);
+}
+/* Pro Gamers End */
+
+
+/*Heroes Start*/
+.wrapper__heroes__container{
+    height: 100vh;
+    background: url('../img/Dota bg3.png') no-repeat center center;
+    position: relative;
+}
+
+.wrapper__heroes__container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 30, 33, 0.9);
+}
+
+.wrapper__heroes__container__slider{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: var(--height);
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10% 90%,
+        transparent
+    );
+}
+
+.wrapper__heroes__container__slider 
+.wrapper__heroes__container__slider__list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+
+.wrapper__heroes__container__slider 
+.wrapper__heroes__container__slider__list 
+.wrapper__heroes__container__slider__list__item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 14s linear infinite;
+    transition: filter 0.3s;
+    animation-delay: calc( (14s / var(--quantity)) * (var(--position) - 1));
+}
+
+.wrapper__heroes__container__slider 
+.wrapper__heroes__container__slider__list 
+.wrapper__heroes__container__slider__list__item
+img {
+    width: 100%;
+    height: var(--height);
+    object-fit: cover;
+}
+
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1)
+    }
+}
+
+.wrapper__heroes__container__slider:hover
+.wrapper__heroes__container__slider__list__item{
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+}
+
+
+.wrapper__heroes__container__slider
+.wrapper__heroes__container__slider__list__item:hover{
+    filter: grayscale(0);
+}
+/*Heroes End*/
+
+
+/*Energy Start*/
+.wrapper__energy__container{
+    height: 100vh;
+    width: 100%;
+    background: url('../img/energy_bg.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper__energy__container__title{
+    padding-top: 20px;
+}
+
+.wrapper__energy__container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 30, 33, 0.6);
+}
+
+.wrapper__energy__container__product{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: 0.7s;
+    display: flex;
+}
+
+.wrapper__energy__container__product
+.wrapper__energy__container__product__soda{
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+
+.wrapper__energy__container__product__soda{
+    --left: 0px;
+    background: 
+    var(--url) var(--left),
+    url('../img/mockup.png') 0 0;
+    background-size: auto 100%;
+    width: 200px;
+    aspect-ratio:  2/4;
+    background-blend-mode: multiply;
+    mask-image: url('../img/mockup.png');
+    mask-size: auto 100%;
+    transition: 0.8s;
+}
+
+.wrapper__energy__container__product__soda:nth-child(2){
+    opacity: 0;
+}
+.wrapper__energy__container__product:hover{
+    bottom: 200px;
+}
+.wrapper__energy__container__product:hover .wrapper__energy__container__product__soda:nth-child(2){
+    opacity: 1;
+    --left: 445px;
+}
+.wrapper__energy__container__product:hover .wrapper__energy__container__product__soda:nth-child(1){
+    opacity: 0;
+    --left: 445px;
+}
+
+.wrapper__energy__container__rock{
+    position: absolute;
+    inset: 0 0 0 0;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.wrapper__energy__container__rock__pic{
+    position: absolute;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+.wrapper__energy__container__rock__pic:first-child{
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    z-index: 1;
+}
+
+
+.wrapper__energy__container__rock__pic:nth-child(2){
+    width: 45%;
+    left: 0;
+    bottom: 0px;
+    transition: 0.7s;
+}
+ 
+.wrapper__energy__container__rock__pic:last-child{
+    width: 30%;
+    right: 0;
+    bottom: -150px;
+    rotate: -20deg;
+    transition: 0.7s;
+}
+
+.wrapper__energy__container:has(.wrapper__energy__container__product:hover) .wrapper__energy__container__rock__pic:first-child{
+    transform: translateX(-50%) translateY(20px);
+}
+
+.wrapper__energy__container:has(.wrapper__energy__container__product:hover) .wrapper__energy__container__rock__pic:nth-child(2){
+    transform: translateX(-100px) translateY(100px);
+}
+
+.wrapper__energy__container:has(.wrapper__energy__container__product:hover) .wrapper__energy__container__rock__pic:last-child{
+    transform: translateX(100px) translateY(100px);
+} 
+/*Energe End*/
+
+
+/*Pro Teams Start*/
+.wrapper__teams__container{
+    background-color: rgba(25, 30, 33, 0.98);
+    height: auto;
+    width: 100%;
+}
+
+
+.wrapper__teams__container__box{
+    margin-top: 50px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.wrapper__teams__container__box__item{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+}
+
+.wrapper__teams__container__box__item::after,
+.wrapper__teams__container__box__item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-image: conic-gradient(
+        from var(--angle), #ea2dd8, #001bf1, #ea2dd8
+    );
+    animation: gradientColor 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.wrapper__teams__container__box__item::after{
+    filter: blur(20px)
+}
+
+@keyframes gradientColor {
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+.wrapper__teams__container__box__item__pic{
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.wrapper__teams__container__box__item__pic:hover,
+.wrapper__teams__container__box__item__pic:active,
+.wrapper__teams__container__box__item__pic:focus-visible{
+    transform: scale(1.05);
+}
+/*Pro Teams End*/
+
+/*Footer Start*/
+.wrapper__footer{
+    width: 100%;
+    height: 300px;
+    background: rgba(25, 30, 33, 0.98);
+    position: relative;
+}
+
+.wrapper__footer__text{
+    padding: 100px 40px 0 40px;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 22px;
+}
+
+.wrapper__footer__logo{
+    height: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.wrapper__footer__copyrwite a{
+    color: aliceblue;
+    text-align: justify;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    text-decoration: none;
+}
+
+.wrapper__footer__copyrwite a:hover,
+.wrapper__footer__copyrwite a:focus-visible,
+.wrapper__footer__copyrwite a:active{
+    text-decoration: underline;
+}
+/*Footer End*/

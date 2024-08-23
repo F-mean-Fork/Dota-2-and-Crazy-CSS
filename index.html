@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience the high-energy thrill with our Radiant-inspired design, blending Dota 2's iconic Radiant faction with the dynamic style of Adrenaline Rush. This flat design layout features intense blue and silver tones, bold angular patterns, and a glowing Radiant symbol, all centered around the powerful message 'ENERGY DRINK'. Perfect for capturing the essence of vitality and invigoration."
+    />
+    <title>MOBA and CSS</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="wrapper__header">
+          <nav class="wrapper__header__nav">
+            <div class="wrapper__header__nav__item">
+              <a href="/index.html" class="wrapper__header__nav__item__link">
+                <img src="img/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#info" class="wrapper__header__nav__item__link">Some Info</a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#scroll" class="wrapper__header__nav__item__link">Scrolling the gallery</a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#hover" class="wrapper__header__nav__item__link">Crazy Hover Effect</a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#slider" class="wrapper__header__nav__item__link">Infinite Slider with Stop mode</a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#energy" class="wrapper__header__nav__item__link">Crazy 3d with CSS</a>
+            </div>
+            <div class="wrapper__header__nav__item">
+              <a href="#gradient" class="wrapper__header__nav__item__link">Infinite Rotating Color Gradient</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro__bg">
+        <div class="wrapper">
+          <div class="wrapper__intro__bg">
+            <h1 class="wrapper__intro__bg__text">
+              <span> Wellcome to the Dota 2 website</span>
+            </h1>
+            <img
+              src="img/Dota2 bg main.png"
+              alt="Wellcome to Dota 2"
+              class="wrapper__intro__bg__pic"
+            />
+            <div class="wrapper__intro__bg__disclaimer">
+              <img src="img/disclaimer.png" alt="disclaimer" />
+              <p>
+                The content provided here is a creative description and analysis
+                of the game Dota 2, intended for informational and entertainment
+                purposes only. This is not an official endorsement, partnership,
+                or affiliation with Valve Corporation, the developer of Dota 2.
+                All trademarks, logos, and game-related content referenced are
+                the property of their respective owners. The ideas and opinions
+                expressed are those of the writer and do not reflect the views
+                of Valve Corporation. Any references to creating websites or
+                animations inspired by the game are suggestions for creative
+                exploration and should be done respecting intellectual property
+                rights.
+              </p>
+            </div>
+            <div class="wrapper__intro__bg__copyrwite">
+              <a href="https://github.com/F-mean-Fork" target="_blank">by f-mean-fork</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dota__info" id="info">
+        <div class="wrapper">
+          <div class="wrapper__dota__info">
+            <div class="wrapper__dota__info__text">
+              Dota 2 is a battlefield where strategy, skill, and teamwork come
+              together in intense combat. With over a hundred unique heroes,
+              each match is a fresh challenge that pushes your decision-making
+              and adaptability to the limit.
+              <br />
+              <br />
+              People love Dota 2 for its depth and the way it rewards both
+              individual brilliance and team coordination. The ever-evolving
+              gameplay and global tournaments like The International keep the
+              game exciting and competitive, drawing players from all over the
+              world.
+              <br />
+              <br />
+              The game’s vibrant visuals, intricate map, and rich hero lore
+              captivate players, making each match a sensory experience. Fans
+              extend this creativity beyond the game, crafting fan art, guides,
+              and even entire websites dedicated to their favorite heroes.
+              <br />
+              <br />
+              In fact, the game is so cool and varied that you could easily
+              create a website with awesome CSS animations, capturing the energy
+              and excitement of a Dota 2 match. Just like in the game, the
+              possibilities for creativity and expression are endless!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wallpapers" id="scroll">
+        <div class="wrapper">
+          <div class="wrapper__wallpapers__container">
+            <h2 class="wrapper__wallpapers__container__title">
+              Dota 2 Gallery
+            </h2>
+            <div class="wrapper__wallpapers__container__gallery">
+              <img
+                src="img/Ogre.png"
+                alt="Ogre Magi"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Curier.png"
+                alt="Donkey Curier"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/WR and Jugger.png"
+                alt="Windranger and Juggernaut"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Dota bg1.png"
+                alt="Dota 2 Background 1"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Invo1.png"
+                alt="Invoker"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Kunkka.png"
+                alt="Kunkka"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/DK.png"
+                alt="Dragon Knight"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Lina.png"
+                alt="Lina"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Naga.png"
+                alt="Naga Siren"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Dota bg2.png"
+                alt="Dota 2 Background 2"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Disruptor.png"
+                alt="Disruptor"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Venga2.png"
+                alt="Vengeful Spirit"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+              <img
+                src="img/Legion.png"
+                alt="Legion Commander"
+                class="wrapper__wallpapers__container__gallery__pic"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gamers" id="hover">
+        <div class="wrapper">
+          <div class="wrapper__gamers__container">
+            <h2 class="wrapper__gamers__container__title">Dota 2 Pro Gamers</h2>
+            <div class="wrapper__gamers__container__slider">
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/ame.png"
+                  alt="Ame"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/dendi.png"
+                  alt="Dendi"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/miracle.png"
+                  alt="Miracle"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/notail.png"
+                  alt="Big Daddy nOtail"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/puppey.png"
+                  alt="Puppey"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/sumail.png"
+                  alt="Sumail"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/topson.png"
+                  alt="Topson"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/yatoro.png"
+                  alt="Yatoro"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+              <div class="wrapper__gamers__container__slider__item">
+                <img
+                  src="img/Pros/zai.png"
+                  alt="Zai"
+                  class="wrapper__gamers__container__slider__item__pic"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="heroes" id="slider">
+        <div class="wrapper">
+          <div
+            class="wrapper__heroes__container"
+            style="--width: 500px; --height: 500px; --quantity: 14"
+          >
+            <h2 class="wrapper__heroes_container__title">Heroes of Dota 2</h2>
+            <div class="wrapper__heroes__container__slider">
+              <div class="wrapper__heroes__container__slider__list">
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 1"
+                >
+                  <img
+                    src="img/WW.png"
+                    alt="Winter Wyvern"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 2"
+                >
+                  <img
+                    src="img/WK.png"
+                    alt="Wraith King"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 3"
+                >
+                  <img
+                    src="img/Wiever.png"
+                    alt="Wiever"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 4"
+                >
+                  <img
+                    src="img/WD.png"
+                    alt="Whitch Doctor"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 5"
+                >
+                  <img
+                    src="img/Trent.png"
+                    alt="Treant Protector"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 6"
+                >
+                  <img
+                    src="img/QOP.png"
+                    alt="Queen Of Pain"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 7"
+                >
+                  <img
+                    src="img/OD.png"
+                    alt="Outworld Destroyer"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 8"
+                >
+                  <img
+                    src="img/Legion2.png"
+                    alt="Legion Commander"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 9"
+                >
+                  <img
+                    src="img/Invo3.png"
+                    alt="Invoker"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 10"
+                >
+                  <img
+                    src="img/Jagger.png"
+                    alt="Jaggernaut"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 11"
+                >
+                  <img
+                    src="img/PA.png"
+                    alt="Phantom Assassin"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 12"
+                >
+                  <img
+                    src="img/Ogre2.png"
+                    alt="Ogre Magi"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 13"
+                >
+                  <img
+                    src="img/Tide.png"
+                    alt="Tidehunter"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+                <div
+                  class="wrapper__heroes__container__slider__list__item"
+                  style="--position: 14"
+                >
+                  <img
+                    src="img/Mipo.png"
+                    alt="Mipo"
+                    class="wrapper__heroes__container__slider__list__item__pic"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="energy" id="energy">
+        <div class="wrapper">
+          <div class="wrapper__energy__container">
+            <h2 class="wrapper__energy__container__title">
+              You need more energy to win
+            </h2>
+            <div class="wrapper__energy__container__product">
+              <div
+                class="wrapper__energy__container__product__soda"
+                style="--url: url(../img/energy1.jpg)"
+              ></div>
+
+              <div
+                class="wrapper__energy__container__product__soda"
+                style="--url: url(../img/energy2.jpg)"
+              ></div>
+            </div>
+
+            <div class="wrapper__energy__container__rock">
+              <img
+                src="img/rock1.png"
+                alt="rock"
+                class="wrapper__energy__container__rock__pic"
+              />
+              <img
+                src="img/rock2.png"
+                alt="rock"
+                class="wrapper__energy__container__rock__pic"
+              />
+              <img
+                src="img/rock3.png"
+                alt="rock"
+                class="wrapper__energy__container__rock__pic"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="teams" id="gradient">
+        <div class="wrapper">
+          <div class="wrapper__teams__container">
+            <h2 class="wrapper__teams__container__title">Dota 2 Pro Teams</h2>
+            <div class="wrapper__teams__container__box">
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Alliance"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/Allince.png"
+                    alt="Alliance"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Team_Empire"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/Empire.png"
+                    alt="Empire"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Fnatic"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/Fnatic.png"
+                    alt="Fnatic"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Natus_Vincere"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/Navi.png"
+                    alt="Navi"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/OG"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/OG.png"
+                    alt="OG"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Virtus.pro"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/VP.png"
+                    alt="Vitus Pro"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Vici_Gaming"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/Vici.png"
+                    alt="Vici Gaming"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+              <div class="wrapper__teams__container__box__item">
+                <a
+                  href="https://liquipedia.net/dota2/Team_Spirit"
+                  target="_blank"
+                  class="link"
+                >
+                  <img
+                    src="img/Teams/TS.png"
+                    alt="Team Stirit"
+                    class="wrapper__teams__container__box__item__pic"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="wrapper__footer">
+          <div class="wrapper__footer__text">
+            Thank you for visiting our site! We appreciate your time and hope
+            you enjoyed exploring our website design, inspired by the spirit of
+            Dota 2. 
+            <br>
+            <br>
+            This game not only inspires us with its gameplay but also
+            sparks creativity and innovation in unexpected areas—like creating
+            animations purely with CSS. Please note that this site is created
+            purely for entertainment purposes, celebrating the creativity and
+            energy of these themes. We hope it inspired you, and we encourage
+            you to share the experience with others. 
+            <br>
+            <br>
+            Thank you again for your visit!
+          </div>
+          <a href="/index.html" class="wrapper__footer__logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <div class="wrapper__footer__copyrwite">
+            <a href="https://github.com/F-mean-Fork" target="_blank">by f-mean-fork</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
